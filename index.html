@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Migueh - Detecção de Bots</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Migueh - Detecção de Bots</h1>
+  </header>
+  <main>
+    <form id="searchForm">
+      <label for="username">Digite o usuário para buscar:</label>
+      <input type="text" id="username" name="username" placeholder="Ex: @usuario" required>
+      <button type="submit">Buscar</button>
+    </form>
+    <div id="result" class="hidden">
+      <p>Probabilidade de ser um bot:</p>
+      <div id="thermometer">
+        <div id="progress"></div>
+      </div>
+      <p id="probability">0%</p>
+    </div>
+  </main>
+  <footer>
+    <p>Desenvolvido por <strong>Indiara Camillo Menegat</strong> - <a href="https://github.com/seu_usuario"
+        target="_blank">GitHub</a></p>
+    <p>Baseado no TCC: "<em>Detecção de social bots no X/Twitter através de análise comportamental e metadados para
+        impedir a propagação de informações falsas</em>"</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
